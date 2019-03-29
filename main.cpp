@@ -48,6 +48,7 @@ void paly50() {
 }
 
 int main() {
+    //https://pintia.cn/problem-sets/994805046380707840/problems/994805080346181632
     paly50();
     return 0;
 }

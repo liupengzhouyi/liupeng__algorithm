@@ -3,4 +3,4 @@ project(liupeng__algorithm)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(liupeng__algorithm main.cpp PAT/paly50.cpp)
+add_executable(liupeng__algorithm main.cpp PAT/paly50.cpp 二分查找/BinarySearch.cpp 二分查找/BinarySearch.h)

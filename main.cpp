@@ -1,9 +1,11 @@
 #include <iostream>
 #include <string>
-#include "二分查找/BinarySearch.h"
+#include "BinarySearch/BinarySearch.h"
+#include "QuickSorting/QuickSorting.h"
+
 
 int main() {
-    BinarySearch binarySearch;
+    /*BinarySearch binarySearch;
     auto key = binarySearch.hasNumber(905);
     auto index = binarySearch.index(28);
     std::cout << index << std::endl;
@@ -11,7 +13,13 @@ int main() {
         std::cout << "has" << std::endl;
     } else {
         std::cout << "not has" << std::endl;
-    }
+    }*/
+
+    QuickSorting *quickSorting = new QuickSorting();
+    quickSorting->toString();
+    quickSorting->setVector(quickSorting->quickSorting(quickSorting->getVector()));
+    quickSorting->toString();
+
     return 0;
 }
 

@@ -20,18 +20,23 @@ void QuickSorting::setVector(const std::vector<int> &vector) {
 
 void QuickSorting::init() {
     this->vector_ = std::vector<int>();
-    for (int index = 0; index <= 200; index++) {
+    for (int index = 0; index <= 2; index++) {
         this->vector_.push_back(rand());
     }
+    this->vector_.push_back(9);
+    this->vector_.push_back(4);
+    this->vector_.push_back(4);
+    this->vector_.push_back(5);
 }
 
 std::vector<int> QuickSorting::quickSorting(std::vector<int> tempVector) {
-    std::cout << "this sorting:";
+    /*std::cout << "this sorting:";
     for (auto item : tempVector) {
         std::cout << item << " ";
     }
-    std::cout << std::endl;
+    std::cout << std::endl;*/
     int index = tempVector[0];
+    auto times = 1;
     std::vector<int> leftVector = std::vector<int>();
     std::vector<int> rightVector = std::vector<int>();
     for (auto item : tempVector) {
@@ -40,9 +45,11 @@ std::vector<int> QuickSorting::quickSorting(std::vector<int> tempVector) {
         }
         else if (item < index) {
             leftVector.push_back(item);
+        } else {
+            times = times + 1;
         }
     }
-    std::cout << "leftVector:";
+    /*std::cout << "leftVector:";
     for (auto item : leftVector) {
         std::cout << item << " ";
     }
@@ -51,7 +58,7 @@ std::vector<int> QuickSorting::quickSorting(std::vector<int> tempVector) {
     for (auto item : rightVector) {
         std::cout << item << " ";
     }
-    std::cout << std::endl;
+    std::cout << std::endl;*/
     if (leftVector.size() > 2) {
         leftVector = this->quickSorting(leftVector);
     }
@@ -62,15 +69,17 @@ std::vector<int> QuickSorting::quickSorting(std::vector<int> tempVector) {
     for (auto item1 : leftVector) {
         returnVector.push_back(item1);
     }
-    returnVector.push_back(index);
+    for (auto i = 1; i < times; i++) {
+        returnVector.push_back(index);
+    }
     for (auto item2 : rightVector) {
         returnVector.push_back(item2);
     }
-    std::cout << "returnVector:";
+    /*std::cout << "returnVector:";
     for (auto item : returnVector) {
         std::cout << item << " ";
     }
-    std::cout << std::endl;
+    std::cout << std::endl;*/
     return returnVector;
 }
 

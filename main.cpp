@@ -16,7 +16,6 @@ int main() {
     }*/
 
     QuickSorting *quickSorting = new QuickSorting();
-    quickSorting->toString();
     quickSorting->setVector(quickSorting->quickSorting(quickSorting->getVector()));
     quickSorting->toString();
 

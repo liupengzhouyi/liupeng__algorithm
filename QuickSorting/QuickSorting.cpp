@@ -20,13 +20,18 @@ void QuickSorting::setVector(const std::vector<int> &vector) {
 
 void QuickSorting::init() {
     this->vector_ = std::vector<int>();
-    for (int index = 0; index <= 20; index++) {
-        this->vector_.push_back(rand()%100);
+    for (int index = 0; index <= 200; index++) {
+        this->vector_.push_back(rand());
     }
 }
 
 std::vector<int> QuickSorting::quickSorting(std::vector<int> tempVector) {
-    int index = this->getVector()[0];
+    std::cout << "this sorting:";
+    for (auto item : tempVector) {
+        std::cout << item << " ";
+    }
+    std::cout << std::endl;
+    int index = tempVector[0];
     std::vector<int> leftVector = std::vector<int>();
     std::vector<int> rightVector = std::vector<int>();
     for (auto item : tempVector) {
@@ -37,29 +42,36 @@ std::vector<int> QuickSorting::quickSorting(std::vector<int> tempVector) {
             leftVector.push_back(item);
         }
     }
+    std::cout << "leftVector:";
     for (auto item : leftVector) {
-        std::cout << item << "-";
+        std::cout << item << " ";
     }
+    std::cout << std::endl;
+    std::cout << "rightVector";
     for (auto item : rightVector) {
         std::cout << item << " ";
     }
-    // return std::vector<int>();
     std::cout << std::endl;
     if (leftVector.size() > 2) {
-        this->quickSorting(leftVector);
-    } else if (rightVector.size() > 2) {
-        this->quickSorting(rightVector);
-    } else {
-        std::vector<int> returnVector = std::vector<int>();
-        for (auto item1 : leftVector) {
-            returnVector.push_back(item1);
-        }
-        returnVector.push_back(index);
-        for (auto item2 : rightVector) {
-            returnVector.push_back(item2);
-        }
-        return returnVector;
+        leftVector = this->quickSorting(leftVector);
     }
+    if (rightVector.size() > 2) {
+        rightVector = this->quickSorting(rightVector);
+    }
+    std::vector<int> returnVector = std::vector<int>();
+    for (auto item1 : leftVector) {
+        returnVector.push_back(item1);
+    }
+    returnVector.push_back(index);
+    for (auto item2 : rightVector) {
+        returnVector.push_back(item2);
+    }
+    std::cout << "returnVector:";
+    for (auto item : returnVector) {
+        std::cout << item << " ";
+    }
+    std::cout << std::endl;
+    return returnVector;
 }
 
 void QuickSorting::toString() {

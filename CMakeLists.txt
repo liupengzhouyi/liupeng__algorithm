@@ -3,4 +3,4 @@ project(liupeng__algorithm)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(liupeng__algorithm main.cpp PAT/paly50.cpp BinarySearch/BinarySearch.cpp BinarySearch/BinarySearch.h QuickSorting/QuickSorting.cpp QuickSorting/QuickSorting.h)
+add_executable(liupeng__algorithm main.cpp PAT/paly50.cpp BinarySearch/BinarySearch.cpp BinarySearch/BinarySearch.h QuickSorting/QuickSorting.cpp QuickSorting/QuickSorting.h HashTable/HashTable.cpp HashTable/HashTable.h HashTable/Node.cpp HashTable/Node.h)

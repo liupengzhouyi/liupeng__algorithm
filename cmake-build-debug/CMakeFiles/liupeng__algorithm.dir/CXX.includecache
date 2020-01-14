@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/liupeng/CLionProjects/liupeng__algorithm/HashTable/HashTable.cpp
+HashTable.h
+/Users/liupeng/CLionProjects/liupeng__algorithm/HashTable/HashTable.h
+functional
+-
+
+/Users/liupeng/CLionProjects/liupeng__algorithm/HashTable/HashTable.h
+Node.h
+/Users/liupeng/CLionProjects/liupeng__algorithm/HashTable/Node.h
+
+/Users/liupeng/CLionProjects/liupeng__algorithm/HashTable/Node.h
+iostream
+-
+string
+-
+

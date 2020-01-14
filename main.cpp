@@ -2,6 +2,7 @@
 #include <string>
 #include "BinarySearch/BinarySearch.h"
 #include "QuickSorting/QuickSorting.h"
+#include "HashTable/HashTable.h"
 
 
 int main() {
@@ -15,9 +16,13 @@ int main() {
         std::cout << "not has" << std::endl;
     }*/
 
-    QuickSorting *quickSorting = new QuickSorting();
+    /*QuickSorting *quickSorting = new QuickSorting();
     quickSorting->setVector(quickSorting->quickSorting(quickSorting->getVector()));
-    quickSorting->toString();
+    quickSorting->toString();*/
+
+    HashTable hashTable;
+    hashTable.init();
+    hashTable.show();
 
     return 0;
 }

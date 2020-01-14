@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="liupeng__algorithm"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="liupeng__algorithm">
+				<Option output="/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug/liupeng__algorithm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 liupeng__algorithm"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="liupeng__algorithm/fast">
+				<Option output="/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug/liupeng__algorithm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 liupeng__algorithm/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/liupeng/CLionProjects/liupeng__algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/liupeng/CLionProjects/liupeng__algorithm/BinarySearch/BinarySearch.cpp">
+			<Option target="liupeng__algorithm"/>
+		</Unit>
+		<Unit filename="/Users/liupeng/CLionProjects/liupeng__algorithm/BinarySearch/BinarySearch.h">
+			<Option target="liupeng__algorithm"/>
+		</Unit>
+		<Unit filename="/Users/liupeng/CLionProjects/liupeng__algorithm/HashTable/HashTable.cpp">
+			<Option target="liupeng__algorithm"/>
+		</Unit>
+		<Unit filename="/Users/liupeng/CLionProjects/liupeng__algorithm/HashTable/HashTable.h">
+			<Option target="liupeng__algorithm"/>
+		</Unit>
+		<Unit filename="/Users/liupeng/CLionProjects/liupeng__algorithm/HashTable/Node.cpp">
+			<Option target="liupeng__algorithm"/>
+		</Unit>
+		<Unit filename="/Users/liupeng/CLionProjects/liupeng__algorithm/HashTable/Node.h">
+			<Option target="liupeng__algorithm"/>
+		</Unit>
+		<Unit filename="/Users/liupeng/CLionProjects/liupeng__algorithm/PAT/paly50.cpp">
+			<Option target="liupeng__algorithm"/>
+		</Unit>
+		<Unit filename="/Users/liupeng/CLionProjects/liupeng__algorithm/QuickSorting/QuickSorting.cpp">
+			<Option target="liupeng__algorithm"/>
+		</Unit>
+		<Unit filename="/Users/liupeng/CLionProjects/liupeng__algorithm/QuickSorting/QuickSorting.h">
+			<Option target="liupeng__algorithm"/>
+		</Unit>
+		<Unit filename="/Users/liupeng/CLionProjects/liupeng__algorithm/main.cpp">
+			<Option target="liupeng__algorithm"/>
+		</Unit>
+		<Unit filename="/Users/liupeng/CLionProjects/liupeng__algorithm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

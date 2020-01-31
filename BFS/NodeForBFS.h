@@ -6,38 +6,36 @@
 #define LIUPENG__ALGORITHM_NODEFORBFS_H
 
 
+#include <vector>
+
 class NodeForBFS {
 private:
+    int id;
     int value;
-    NodeForBFS * wNodeForBfs;
-    NodeForBFS * sNodeForBfs;
-    NodeForBFS * aNodeForBfs;
-    NodeForBFS * dNodeForBfs;
+    int visited = 0;
+    std::vector<int> vector;
+
 public:
 
-    NodeForBFS(int value, NodeForBFS *wNodeForBfs, NodeForBFS *sNodeForBfs, NodeForBFS *aNodeForBfs,
-               NodeForBFS *dNodeForBfs);
+    NodeForBFS();
+
+    int getId() const;
+
+    void setId(int id);
 
     int getValue() const;
 
     void setValue(int value);
 
-    NodeForBFS *getWNodeForBfs() const;
+    int getVisited() const;
 
-    void setWNodeForBfs(NodeForBFS *wNodeForBfs);
+    void setVisited(int visited);
 
-    NodeForBFS *getSNodeForBfs() const;
+    const std::vector<int> &getVector() const;
 
-    void setSNodeForBfs(NodeForBFS *sNodeForBfs);
+    void setVector(const std::vector<int> &vector);
 
-    NodeForBFS *getANodeForBfs() const;
-
-    void setANodeForBfs(NodeForBFS *aNodeForBfs);
-
-    NodeForBFS *getDNodeForBfs() const;
-
-    void setDNodeForBfs(NodeForBFS *dNodeForBfs);
-
+    void say();
 };
 
 

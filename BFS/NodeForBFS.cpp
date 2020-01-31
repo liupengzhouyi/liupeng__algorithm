@@ -2,11 +2,18 @@
 // Created by 刘鹏 on 2020/2/1.
 //
 
+#include <iostream>
 #include "NodeForBFS.h"
 
-NodeForBFS::NodeForBFS(int value, NodeForBFS *wNodeForBfs, NodeForBFS *sNodeForBfs, NodeForBFS *aNodeForBfs,
-                       NodeForBFS *dNodeForBfs) : value(value), wNodeForBfs(wNodeForBfs), sNodeForBfs(sNodeForBfs),
-                                                  aNodeForBfs(aNodeForBfs), dNodeForBfs(dNodeForBfs) {}
+NodeForBFS::NodeForBFS() {}
+
+int NodeForBFS::getId() const {
+    return id;
+}
+
+void NodeForBFS::setId(int id) {
+    NodeForBFS::id = id;
+}
 
 int NodeForBFS::getValue() const {
     return value;
@@ -16,34 +23,32 @@ void NodeForBFS::setValue(int value) {
     NodeForBFS::value = value;
 }
 
-NodeForBFS *NodeForBFS::getWNodeForBfs() const {
-    return wNodeForBfs;
+int NodeForBFS::getVisited() const {
+    return visited;
 }
 
-void NodeForBFS::setWNodeForBfs(NodeForBFS *wNodeForBfs) {
-    NodeForBFS::wNodeForBfs = wNodeForBfs;
+void NodeForBFS::setVisited(int visited) {
+    NodeForBFS::visited = visited;
 }
 
-NodeForBFS *NodeForBFS::getSNodeForBfs() const {
-    return sNodeForBfs;
+const std::vector<int> &NodeForBFS::getVector() const {
+    return vector;
 }
 
-void NodeForBFS::setSNodeForBfs(NodeForBFS *sNodeForBfs) {
-    NodeForBFS::sNodeForBfs = sNodeForBfs;
+void NodeForBFS::setVector(const std::vector<int> &vector) {
+    NodeForBFS::vector = vector;
 }
 
-NodeForBFS *NodeForBFS::getANodeForBfs() const {
-    return aNodeForBfs;
+void NodeForBFS::say() {
+    std::cout << "-----------------" << std::endl;
+    std::cout << "id: " << this->getId() << std::endl;
+    std::cout << "Visit: " << this->getVisited() << std::endl;
+    std::cout << "value:" << this->getValue() << std::endl;
+    std::cout << "vector:";
+    for (auto item:this->getVector()) {
+        std::cout << item << " - ";
+    }
+    std::cout << std::endl;
+    std::cout << "-----------------" << std::endl;
 }
 
-void NodeForBFS::setANodeForBfs(NodeForBFS *aNodeForBfs) {
-    NodeForBFS::aNodeForBfs = aNodeForBfs;
-}
-
-NodeForBFS *NodeForBFS::getDNodeForBfs() const {
-    return dNodeForBfs;
-}
-
-void NodeForBFS::setDNodeForBfs(NodeForBFS *dNodeForBfs) {
-    NodeForBFS::dNodeForBfs = dNodeForBfs;
-}

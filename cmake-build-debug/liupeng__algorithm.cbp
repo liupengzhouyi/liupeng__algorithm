@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/liupeng/CLionProjects/liupeng__algorithm/BFS/NodeForBFS.cpp">
+			<Option target="liupeng__algorithm"/>
+		</Unit>
+		<Unit filename="/Users/liupeng/CLionProjects/liupeng__algorithm/BFS/NodeForBFS.h">
+			<Option target="liupeng__algorithm"/>
+		</Unit>
 		<Unit filename="/Users/liupeng/CLionProjects/liupeng__algorithm/BinarySearch/BinarySearch.cpp">
 			<Option target="liupeng__algorithm"/>
 		</Unit>

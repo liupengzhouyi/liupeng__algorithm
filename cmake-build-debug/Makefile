@@ -123,6 +123,33 @@ liupeng__algorithm/fast:
 	$(MAKE) -f CMakeFiles/liupeng__algorithm.dir/build.make CMakeFiles/liupeng__algorithm.dir/build
 .PHONY : liupeng__algorithm/fast
 
+BFS/NodeForBFS.o: BFS/NodeForBFS.cpp.o
+
+.PHONY : BFS/NodeForBFS.o
+
+# target to build an object file
+BFS/NodeForBFS.cpp.o:
+	$(MAKE) -f CMakeFiles/liupeng__algorithm.dir/build.make CMakeFiles/liupeng__algorithm.dir/BFS/NodeForBFS.cpp.o
+.PHONY : BFS/NodeForBFS.cpp.o
+
+BFS/NodeForBFS.i: BFS/NodeForBFS.cpp.i
+
+.PHONY : BFS/NodeForBFS.i
+
+# target to preprocess a source file
+BFS/NodeForBFS.cpp.i:
+	$(MAKE) -f CMakeFiles/liupeng__algorithm.dir/build.make CMakeFiles/liupeng__algorithm.dir/BFS/NodeForBFS.cpp.i
+.PHONY : BFS/NodeForBFS.cpp.i
+
+BFS/NodeForBFS.s: BFS/NodeForBFS.cpp.s
+
+.PHONY : BFS/NodeForBFS.s
+
+# target to generate assembly for a file
+BFS/NodeForBFS.cpp.s:
+	$(MAKE) -f CMakeFiles/liupeng__algorithm.dir/build.make CMakeFiles/liupeng__algorithm.dir/BFS/NodeForBFS.cpp.s
+.PHONY : BFS/NodeForBFS.cpp.s
+
 BinarySearch/BinarySearch.o: BinarySearch/BinarySearch.cpp.o
 
 .PHONY : BinarySearch/BinarySearch.o
@@ -294,6 +321,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... liupeng__algorithm"
+	@echo "... BFS/NodeForBFS.o"
+	@echo "... BFS/NodeForBFS.i"
+	@echo "... BFS/NodeForBFS.s"
 	@echo "... BinarySearch/BinarySearch.o"
 	@echo "... BinarySearch/BinarySearch.i"
 	@echo "... BinarySearch/BinarySearch.s"
